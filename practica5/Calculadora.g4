@@ -2,13 +2,13 @@ grammar Calculadora;
 
 prog: expresion EOF ;
 // Regla principal
-expresion : '-' expresion                   # Negativo
-          | funcion                         # Funciones
-          | expresion '^' expresion         # Potencia
-          | expresion ('*'|'/') expresion   # MultDi
-          | expresion ('+'|'-') expresion   # AddSub  
-          | '(' expresion ')'               # Parentesis
-          | NUMBER                          # Numero
+expresion : '-' expresion                   
+          | funcion                         
+          | expresion '^' expresion         
+          | expresion ('*'|'/') expresion   
+          | expresion ('+'|'-') expresion    
+          | '(' expresion ')'               
+          | NUMBER                          
           ;
 
 funcion
